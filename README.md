@@ -12,4 +12,4 @@ This project showcases a collection of modern, reusable animations built using *
 
 The project is organized by animation type or technique:
 
-[ScrollTrigger](./GSAP/ScrollTrigger.md)
+[ScrollTrigger](./GSAP/ScrollTrigger/ScrollTrigger.md)
