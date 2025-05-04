@@ -15,41 +15,42 @@ This section demonstrates scroll-based animations using [GSAP ScrollTrigger](htt
 ### 🔧 Basic Usage Example:
 HTML
 ```html
-    <div class="div1"></div>
-    <div class="div2">
-      <div class="square"></div>
-      <div class="square2"></>
-    </div>
+<div class="div1"></div>
+<div class="div2">
+    <div class="square"></div>
+    <div class="square2"></div>
+</div>
 ```
 CSS
 ```css
-    .div1, .div2 {
-        height: 100vh;
-    }
+.div1,
+.div2 {
+  height: 100vh;
+}
 
-    .div1 {
-        background-color: pink;
-    }
+.div1 {
+  background-color: pink;
+}
 
-    .div2 {
-        background-color: salmon;
-    }
+.div2 {
+  background-color: salmon;
+}
 
-    .square,
-    .square2 {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-    }
+.square,
+.square2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
 
-    .square {
-        background-color: blue;
-    }
+.square {
+  background-color: blue;
+}
 
-    .square2 {
-        margin-top: 200px;
-        background-color: yellow;
-    }
+.square2 {
+  margin-top: 200px;
+  background-color: yellow;
+}
 ```
 JavaScript
 
@@ -67,13 +68,9 @@ gsap.to(".square", {
 ```
 
 > What does this mean?
-
 > `.square` moves 700px to the right
-
 > This move should happen in 3 seconds
-
 > But not immediately — only when `.square` appears into viewport
-
 > So: "blue box (.square) enters the viewport → start moving right"
 
 - Second animation: again for `.square` but with trigger `.square2`
@@ -86,9 +83,7 @@ gsap.to(".square", {
 });
 ```
 > What does this mean?
-
 > Here everything is the same as before, but this time the trigger is `.square2`
-
 > So "when you see a yellow box (.square2), the blue box (.square2) should move to the right"
 
 
