@@ -35,11 +35,20 @@ CSS
         background-color: salmon;
     }
 
-    .square {
+    .square,
+    .square2 {
         width: 150px;
         height: 150px;
-        background-color: blue;
         border-radius: 10px;
+    }
+
+    .square {
+        background-color: blue;
+    }
+
+    .square2 {
+        margin-top: 200px;
+        background-color: yellow;
     }
 ```
 JavaScript
