@@ -2,9 +2,7 @@
 # 📍 ScrollTrigger: `start` and `end`
 GSAP’s ScrollTrigger gives you full control over when an animation begins and ends during scrolling. The two most important properties for this are:
 
-`start`
-
-`end`
+`start` and `end`. 
 
 These tell ScrollTrigger where in the scroll journey to start and stop your animation.
 
@@ -21,7 +19,7 @@ These tell ScrollTrigger where in the scroll journey to start and stop your anim
     start: 400
   }
   ```
-  > This means the animation will start after the page has been scrolled *400px* from the top
+  - This means the animation will start after the page has been scrolled *400px* from the top
 - **🧭 Positional Keywords**
   
   You can also define start using keywords to make the behavior more responsive and intuitive.
@@ -50,7 +48,7 @@ These tell ScrollTrigger where in the scroll journey to start and stop your anim
   ```
   This means:
 
-  > Start the animation when the `top` of .square reaches the `center` of the viewport.
+  - Start the animation when the `top` of .square reaches the `center` of the viewport.
 
   So if you're scrolling down the page:
 
@@ -65,9 +63,9 @@ These tell ScrollTrigger where in the scroll journey to start and stop your anim
   // or
   start: "center 200px"
   ``` 
-  > `"top 30%"` → Start when the `top` of the trigger reaches `30%` down the viewport
+  - `"top 30%"` → Start when the `top` of the trigger reaches `30%` down the viewport
 
-  > `"center 200px"` → Start when the `center` of the trigger reaches `200px` down from the top  of the viewport
+  - `"center 200px"` → Start when the `center` of the trigger reaches `200px` down from the top  of the viewport
 
 - **⚡ Dynamic `start` and `end` using offsetHeight**
   
@@ -87,7 +85,7 @@ These tell ScrollTrigger where in the scroll journey to start and stop your anim
 
   - “Start the animation when .square hits the center of the screen, and run it for the height of that element.”
 
-   > This is very helpful if your element’s height might change or be dynamic — it ensures your scroll animation duration matches the actual element size.
+  This is very helpful if your element’s height might change or be dynamic — it ensures your scroll animation duration matches the actual element size.
 ### 🧪 Default Behavior
 If you don’t define `start` and `end`, the default is:
 
@@ -97,9 +95,9 @@ end: "bottom top"
 ```
 This means:
 
-  > Animation starts when the `top of the trigger` hits the `bottom of the viewport`
+  - Animation starts when the `top of the trigger` hits the `bottom of the viewport`
 
-  > Animation ends when the `bottom of the trigger` hits the `top of the viewport`
+  - Animation ends when the `bottom of the trigger` hits the `top of the viewport`
 
 ### 🎛️ ScrollTrigger `toggleClass`
 The `toggleClass` property in ScrollTrigger allows you to automatically add or remove a CSS class to an element based on the scroll position — without writing separate event listeners.
@@ -167,4 +165,4 @@ markers: {
 | `indent`     | Adds horizontal space between the markers and the edge of the screen (in pixels) |
 
 
-> This control allows you to make animations respond naturally to scroll position — making your web pages feel more dynamic and interactive ✨
+ This control allows you to make animations respond naturally to scroll position — making your web pages feel more dynamic and interactive ✨
